@@ -1,6 +1,6 @@
 /*
  * File: helper.c
- * Auth: IYADUKUNZE EMILE AND JACK DONNILY Ngabo        
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"

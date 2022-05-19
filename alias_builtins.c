@@ -1,7 +1,6 @@
 /*
  * File: builtin.c
- * Auth: IYADUKUNZE Emile and Jack Donnily Ngabo
- *      
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"
@@ -84,10 +83,10 @@ void set_alias(char *var_name, char *value)
 	new_value[k] = '\0';
 	while (temp)
 	{
-OAOAOAOAOA		if (_strcmp(var_name, temp->name) == 0)
-OAOAOA		{
-OAOAOA			free(temp->value);
-OAOAOAOAOAOAOAOAOAOAOA			temp->value = new_value;
+		if (_strcmp(var_name, temp->name) == 0)
+		{
+			free(temp->value);
+			temp->value = new_value;
 			break;
 		}
 		temp = temp->next;
@@ -114,36 +113,36 @@ void print_alias(alias_t *alias)
 	_strcat(alias_string, "'\n");
 
 	write(STDOUT_FILENO, alias_string, len);
-OBOBOBOBOBOBOB	free(alias_string);
+	free(alias_string);
 }
-OBOBOBOBOBOBOB/**
+/**
  * replace_aliases - Goes through the arguments and replace any matching alias
-OBOBOBOBOB * with their value.
+ * with their value.
  * @args: 2D pointer to the arguments.
  *
  * Return: 2D pointer to the arguments.
-OB */
+ */
 char **replace_aliases(char **args)
 {
 	alias_t *temp;
 	int i;
-OB	char *new_value;
+	char *new_value;
 
 	if (_strcmp(args[0], "alias") == 0)
 		return (args);
 	for (i = 0; args[i]; i++)
 	{
-OB		temp = aliases;
+		temp = aliases;
 		while (temp)
 		{
 			if (_strcmp(args[i], temp->name) == 0)
 			{
 				new_value = malloc(sizeof(char) * (_strlen(temp->value) + 1));
-OAOAOAOAOAOA				if (!new_value)
-OAOAOAOAOAOAOAOA				{
-OAOAOA					free_args(args, args);
+				if (!new_value)
+				{
+					free_args(args, args);
 					return (NULL);
-OAOAOAOAOAOA				}
+				}
 				_strcpy(new_value, temp->value);
 				free(args[i]);
 				args[i] = new_value;
@@ -154,5 +153,5 @@ char **replace_aliases(char **args)
 		}
 	}
 
-OAOAOAOAOAOAOAOAOAOAOAOAOAOA	return (args);
-OAOAOAOAOAOAOAOAOAOAOAOAOAOA}
+	return (args);
+}

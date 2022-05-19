@@ -1,7 +1,6 @@
 /*
  * File: getline.c
- * Auth: IYADUKUNZE Emile and Jack Donnily Ngabo
- *       
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"

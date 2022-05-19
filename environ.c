@@ -1,7 +1,6 @@
 /*
  * File: environ.c
- * Auth:IYADUKUNZE Emile and jack Donnily Ngabo
- *       
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"

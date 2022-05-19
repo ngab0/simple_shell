@@ -1,7 +1,6 @@
 /*
  * File: env_builtins.c
- * IYADUKUNZE Emile and Jack donnily Ngabo
- *       
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"
@@ -118,17 +117,17 @@ int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front)
 		;
 
 	new_environ = malloc(sizeof(char *) * size);
-OAOA	if (!new_environ)
-OA		return (create_error(args, -1));
+	if (!new_environ)
+		return (create_error(args, -1));
 
 	for (index = 0, index2 = 0; environ[index]; index++)
-OA	{
+	{
 		if (*env_var == environ[index])
-OAOAOA		{
-OA			free(*env_var);
-OA			continue;
-OAOA		}
-OAOA		new_environ[index2] = environ[index];
+		{
+			free(*env_var);
+			continue;
+		}
+		new_environ[index2] = environ[index];
 		index2++;
 	}
 	free(environ);

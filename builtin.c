@@ -1,6 +1,6 @@
 /*
  * File: builtin.c
- * Auth: Iyadukunze Emile and Jack Donnily Ngabo 
+ * Auth: Iyadukunze Emile and Jack Donnily Ngabo
  */
 
 #include "shell.h"

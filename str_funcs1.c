@@ -1,7 +1,6 @@
 /*
  * File: str_funcs1.c
  * Auth: Iyadukunze Emile and Jack Donnily Ngabo
- *       
  */
 
 #include "shell.h"

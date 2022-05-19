@@ -1,7 +1,6 @@
 /*
  * File: linkedlist.c
  * Auth: Iyadukunze Emile and Jack Donnily Ngabo
- *       
  */
 
 #include "shell.h"

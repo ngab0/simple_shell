@@ -4,7 +4,6 @@
 /*
  * File: shell.h
  * Auth: Iyadukunze Emile and Jack Donnily Ngabo
- *       
  */
 
 #include <fcntl.h>

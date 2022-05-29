@@ -1,5 +1,5 @@
 C - Simple Shell
 
 Created By:
-Jack Donnily Ngabo
-Iyadukunze Emile
+
+Jack Donnily Ngabo and Iyadukunze Emile
